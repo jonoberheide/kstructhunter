@@ -51,10 +51,8 @@ def hunt(data, target):
 
     size, cache = structs[target]
 
-    print 'target struct %s is size %d' % (target, size)
-    print
-    print 'target struct %s is allocated in kmalloc-%d' % (target, cache)
-    print
+    print 'struct %s is size %d' % (target, size)
+    print 'struct %s is allocated in kmalloc-%d' % (target, cache)
     print 'other structs allocated in kmalloc-%d:' % (cache)
 
     for struct in caches[cache]:

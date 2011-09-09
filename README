@@ -7,11 +7,10 @@ Routines for hunting down kernel structs.
 
 Example:
 
-$ python kstructhunter.py structs.txt sctp_ssnmap
-target struct sctp_ssnmap is size 40
-target struct sctp_ssnmap is allocated in kmalloc-64
+$ python kstructhunter.py sctp_ssnmap
+struct sctp_ssnmap is size 40
+struct sctp_ssnmap is allocated in kmalloc-64
 other structs allocated in kmalloc-64:
-	page
-	xsave_hdr_struct
-	mpc_table
-	...
+        ARCMSR_CDB
+        ArcProto
+        BC_DEC_YUV_BUFFS
